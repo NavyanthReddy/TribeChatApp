@@ -1,58 +1,89 @@
+// styles.ts
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f7f7f7',
+    backgroundColor: '#F3F4F6',
   },
   messageList: {
     padding: 10,
-  },
-  bubble: {
-    padding: 10,
-    borderRadius: 8,
-    marginBottom: 8,
-    maxWidth: '80%',
-  },
-  bubbleYou: {
-    alignSelf: 'flex-end',
-    backgroundColor: '#daf8cb',
-  },
-  bubbleOther: {
-    alignSelf: 'flex-start',
-    backgroundColor: '#ffffff',
-  },
-  sender: {
-    fontWeight: 'bold',
-    marginBottom: 2,
-  },
-  message: {
-    fontSize: 16,
+    paddingBottom: 20,
   },
   inputContainer: {
     flexDirection: 'row',
-    padding: 10,
+    alignItems: 'center',
+    paddingHorizontal: 10,
+    paddingVertical: 6,
     borderTopWidth: 1,
-    borderColor: '#ccc',
+    borderColor: '#D1D5DB',
     backgroundColor: '#fff',
   },
   textInput: {
     flex: 1,
     height: 40,
-    borderColor: '#ccc',
+    borderColor: '#CBD5E1',
     borderWidth: 1,
+    borderRadius: 8,
     paddingHorizontal: 10,
-    borderRadius: 20,
+    marginRight: 10,
   },
   sendButton: {
-    marginLeft: 8,
-    backgroundColor: '#007bff',
-    paddingHorizontal: 15,
-    justifyContent: 'center',
-    borderRadius: 20,
+    backgroundColor: '#3B82F6',
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    borderRadius: 8,
   },
   sendText: {
     color: '#fff',
     fontWeight: 'bold',
+  },
+  bubble: {
+    padding: 10,
+    marginVertical: 5,
+    maxWidth: '80%',
+    borderRadius: 10,
+  },
+  bubbleLeft: {
+    backgroundColor: '#E5E7EB',
+    alignSelf: 'flex-start',
+  },
+  bubbleRight: {
+    backgroundColor: '#DCFCE7',
+    alignSelf: 'flex-end',
+  },
+  bubbleText: {
+    fontSize: 16,
+  },
+  senderName: {
+    fontSize: 12,
+    color: '#6B7280',
+  },
+  timestamp: {
+    fontSize: 10,
+    color: '#9CA3AF',
+    marginTop: 4,
+    alignSelf: 'flex-end',
+  },
+  participantsPanel: {
+    padding: 10,
+    backgroundColor: '#F9FAFB',
+    borderBottomWidth: 1,
+    borderColor: '#E5E7EB',
+  },
+  participantsTitle: {
+    fontWeight: 'bold',
+    marginBottom: 4,
+    fontSize: 14,
+  },
+  participantsList: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 6,
+  },
+  participantName: {
+    marginRight: 10,
+    fontSize: 13,
+    color: '#1F2937',
   },
 });
